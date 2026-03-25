@@ -1,12 +1,12 @@
 export default function MenuHero() {
   return (
-    <header className="px-8 mb-32 max-w-7xl mx-auto">
+    <header className="px-4 md:px-8 mb-16 md:mb-32 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row items-end justify-between gap-8 border-b border-outline-variant/15 pb-12">
         <div className="max-w-2xl">
           <span className="font-label text-xs uppercase tracking-[0.3em] text-primary mb-4 block">
             Spring Collection 2026
           </span>
-          <h1 className="font-headline text-6xl md:text-8xl font-light leading-tight mb-8">
+          <h1 className="font-headline text-4xl sm:text-6xl md:text-8xl font-light leading-tight mb-8">
             The Culinary Anthology
           </h1>
           <p className="font-body text-lg text-outline leading-relaxed max-w-lg">

@@ -1,8 +1,8 @@
 export default function AccoladesSection() {
   return (
     <section className="py-24 bg-surface border-t border-outline-variant/10">
-      <div className="max-w-7xl mx-auto px-12">
-        <div className="flex flex-wrap justify-between items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
+      <div className="max-w-7xl mx-auto px-4 md:px-12">
+        <div className="flex flex-wrap justify-center md:justify-between items-center gap-8 md:gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
           <div className="flex flex-col items-center">
             <div className="flex gap-1 mb-2">
               <span

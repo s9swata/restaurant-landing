@@ -1,6 +1,6 @@
 export default function ExperienceLocationSection() {
   return (
-    <section id="location" className="py-32 bg-surface">
+    <section id="location" className="py-16 md:py-32 bg-surface">
       <div className="max-w-7xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
         <div className="lg:col-span-7 flex flex-col justify-between">
           <div>
@@ -65,7 +65,7 @@ export default function ExperienceLocationSection() {
             </a>
           </div>
         </div>
-        <div className="lg:col-span-5 h-[600px] relative overflow-hidden rounded-sm">
+        <div className="lg:col-span-5 h-80 md:h-[600px] relative overflow-hidden rounded-sm">
           <img
             alt="Eiffel Tower at night from restaurant"
             className="w-full h-full object-cover"

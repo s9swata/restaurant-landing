@@ -1,8 +1,8 @@
 export default function AntipastiSection() {
   return (
-    <section className="mb-40 px-8 max-w-7xl mx-auto">
+    <section className="mb-20 md:mb-40 px-4 md:px-8 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
-        <div className="md:col-span-5 sticky top-40">
+        <div className="md:col-span-5 md:sticky top-40">
           <h2 className="font-headline text-4xl mb-6">Antipasti</h2>
           <div className="w-24 h-px bg-primary-container mb-12"></div>
           <div className="space-y-16">

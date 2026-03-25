@@ -1,8 +1,8 @@
 export default function TastingMenuSection() {
   return (
-    <section className="mb-40 px-8 max-w-7xl mx-auto">
+    <section className="mb-20 md:mb-40 px-4 md:px-8 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="md:col-span-2 bg-primary text-on-primary p-12 flex flex-col justify-between min-h-[400px]">
+        <div className="md:col-span-2 bg-primary text-on-primary p-6 md:p-12 flex flex-col justify-between min-h-[400px]">
           <div>
             <span className="font-label text-xs uppercase tracking-[0.3em] opacity-80 mb-6 block">
               The Ultimate Expression

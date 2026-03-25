@@ -1,8 +1,8 @@
 'use client';
 export default function ReservationsSection() {
   return (
-    <section id="reservations" className="py-32 bg-surface-container-low">
-      <div className="max-w-6xl mx-auto px-12">
+    <section id="reservations" className="py-16 md:py-32 bg-surface-container-low">
+      <div className="max-w-6xl mx-auto px-4 md:px-12">
 
         {/* Section Header */}
         <div className="mb-20">

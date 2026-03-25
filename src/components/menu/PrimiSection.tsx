@@ -1,12 +1,12 @@
 export default function PrimiSection() {
   return (
-    <section className="mb-40 bg-surface-container-low py-32 px-8">
+    <section className="mb-20 md:mb-40 bg-surface-container-low py-16 md:py-32 px-4 md:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
         <div className="md:col-span-7 order-2 md:order-1">
           <div className="relative mb-24">
             <img
               alt="Primi pasta"
-              className="w-full h-[600px] object-cover"
+              className="w-full h-64 sm:h-96 md:h-[600px] object-cover"
               data-alt="Exquisite handmade pasta dish with golden truffles and a rich creamy sauce on an elegant white plate"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOGpcw0Xh_ReHsjm8vGjxTQPz-MNCTFsPD5G5-5ZUDLtyLZgLX7wwr8dsTE6hp2JGmA5oaGrVRMQ6R6H-RIBghIpNJ_tHzpK4qFYQTsre2VQPWuMfujL318orKfhj5FwxgEMENVe0KQMzpDe4-Cf60aV6L4ZlOa5o-RD2WlFP5-ra1luxtI27Px79rWnG29PVHje6AmuiHrKcZraEWm4DRkeQ2PFLTiQuUqqHBt9JygXZtig1wwfNdabPJ63CYnryLdT09NGGdapNN"
             />

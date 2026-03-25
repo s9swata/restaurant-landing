@@ -1,6 +1,6 @@
 export default function QuoteSection() {
   return (
-    <section className="py-40 px-8 text-center max-w-4xl mx-auto">
+    <section className="py-20 md:py-40 px-4 md:px-8 text-center max-w-4xl mx-auto">
       <span className="material-symbols-outlined text-primary-container text-4xl mb-12">
         restaurant
       </span>
