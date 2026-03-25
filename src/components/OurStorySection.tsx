@@ -8,7 +8,7 @@ export default function OurStorySection() {
               alt="Chef plating a gourmet dish"
               className="w-full h-full object-cover scale-105"
               data-alt="Chef focused on plating fine dining pasta"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV9YvPVVly0amqKbyEf0koU-LwB9j3VRfYjwmI1LtLJ0qFlgqJQSSLTGZpeQ_RFCzrOk796rjY08geMpx3t-KqxQHsOdNFORHw30Yp78AC1krkD771_EDDQpvyCkppn3fAHSBVKBJP_iwhFAyx73UanWuxMv7S4tCIkeEi3ST7DeDR2VTWRvTw0l_3RT_Cdavs69OCNbq2foTL5CbRw5rssWE1P1VgCIgQ8NgF0fLBKA5Oo95s4p_OalYk5kkYjJVG0lfPKH6hp26U"
+              src="/images/chef-plating.webp"
             />
           </div>
           {/* Ingredient Overlay Signature Component */}
@@ -53,7 +53,7 @@ export default function OurStorySection() {
               alt="Chef portrait"
               className="w-16 h-16 rounded-full object-cover"
               data-alt="Portrait of our Executive Chef"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj2ts8fYh0pPIiMl2zAQCZdAXeTJtd35ECwLfV1TxU8Sj23aKqWp9z1umbzuTMW_9XVmKqaBXsfcn3Rtit8iZLFwzqR1Js-XdHBfurZQiKE5xyFJ3jVFN62iAO2xJ4SsdzCVKb3g8iJASYl6lu53MwYgYUlIORhuX1Lu4xST0VOKgUyvPtsubBK5tazMKNpO1IchEEQgUdjQ91UufDhwsIFQnc-aDtVo-PvpTeDXOL0D-cOF0V0Y2Vuh_ccBeU_V_qxsWjjOJHnEhI"
+              src="/images/chef-portrait.webp"
             />
             <div>
               <p className="font-label text-xs uppercase tracking-widest text-on-surface">

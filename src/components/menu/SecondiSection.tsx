@@ -57,7 +57,7 @@ export default function SecondiSection() {
                 alt="Secondi main course"
                 className="w-full h-full object-cover"
                 data-alt="Beautifully seared lamb rack served with roasted vegetables and a glossy red wine reduction on dark slate"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtQN3pUrqK2yiguYcGrYtYN3WJXp1LZZ2PIigu8VVfurdBuMlWKsP4lBpe6xGhRiaoJ5Y7HNpmU3zsUIzeyCO5Vy_tv7PY7Dp83G-Z7JXo1Y75eG5sP9OAp6-aPyah_p35M1YlGFLBcqpq2eDdxJZ0A29GTMwur0lGg9AmCMiH8_m-KkO1R6Avz-HTHvc2fTX36Uvy76c_906D6yvFIlyv_CznT10o6X4DeFZWo6K8iymooxyyURH7M38MSugemlR78IVswR8qBlLP"
+                src="/images/secondi-1.webp"
               />
             </div>
             <div className="aspect-[3/4] overflow-hidden">
@@ -65,7 +65,7 @@ export default function SecondiSection() {
                 alt="Detail of ingredients"
                 className="w-full h-full object-cover"
                 data-alt="Fresh purple artichokes and garden herbs on a marble surface with soft natural light"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuACXb62mvREDhRGQQTh4U9TGp3leh7C3zqL8TzbCi1AmxS86tZbPq-O3OepLux7RGZR-52_4GTGYDxwbaU2wY9sIlTEhHNMjjpq54ldofnRB43TSqD_dFk9uGjiiZNxPuVGBwM6iCfiuyW3LmAreBzvxYsIpQwiRp6Ski9UT7hW0r38s2xf8a2VTuvSkammuw5gUtQeRpkXMrL_AUUeZpFa1ovEOrpM9ixnMp8PTi6rTnOC1Xx5Xo2OIL46AEKPI0L5jcAeVJLYO2kW"
+                src="/images/secondi-2.webp"
               />
             </div>
             <div className="aspect-[3/4] overflow-hidden mt-12">
@@ -73,7 +73,7 @@ export default function SecondiSection() {
                 alt="Wine pairing"
                 className="w-full h-full object-cover"
                 data-alt="A glass of deep red Barolo wine standing next to a bottle in a dim, sophisticated cellar atmosphere"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxhIwjFM6mMCQJl1FnixVo54TfqmEVe6YQUprO5PPB698gJKRCJ3Bcv8IV3CMTzOPAEnSQDAN78zhwt8TgynMfdf4HEYaf_I1urf3g9nstUSNHH_2M9k_BKqiOs1LRFI-rALm9T-2nikOSfmfJtkGLp68kvdivyqnaa3hKE7bb5N7SGMTl46Qe9P_Pmt846ehCNkXz6TDUox5zRiDiv4KSrxVJgRUgiaDFKP5GCXXVHrqF2fFFgttj5EmSe-e4LVOA6QApGqtzsHWc"
+                src="/images/secondi-3.webp"
               />
             </div>
           </div>

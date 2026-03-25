@@ -70,7 +70,7 @@ export default function ExperienceLocationSection() {
             alt="Eiffel Tower at night from restaurant"
             className="w-full h-full object-cover"
             data-alt="View of Eiffel Tower at night from a window seat"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD52kPGeaE59a91uLNA8mr0hLJ07JuFGxjeKUfvCQ_lndwvzIiuLh2S8gGZplHtsAfop4Cfo7ZKVcSCez0n7mlmWwpcJrAn_JHw2JcurU4VF1GqAlXuugtYlFwGQXSp0nK5SOVV1ELYLtTSd1tf-STaBEoVT3Hb6eW-iTFO2Cwlm_fxScIgPYcAfxYuKDMFOwTtg_upi7MZ3Ij0tkT0eVoZCAJPKNDgpLWMAeHAP3YTG8M3_M6xadP1i5zPXIaQuXkopcP8BGnjPeiu"
+            src="/images/eiffel-night.webp"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
           <div className="absolute bottom-10 left-10 right-10">
@@ -80,7 +80,7 @@ export default function ExperienceLocationSection() {
                 className="w-full h-full object-cover grayscale"
                 data-alt="Stylized map of Paris center"
                 data-location="Paris, France"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYvFiv-jD7Y5pWtRD8oloEvMZS4q_Gi-X1YYpvx4Ezz6wXe5vOalvQg_krvDdgrHvEAREQ9cnGZiUTUabtx87e1mIb4yEdZi0Es9xK5i2Hi_B9LHA9or1yJS7hMVy-TCVpBB253MNEoXkAhCv6zgAlqZZV9-w2tYmWvQDnJ-m9HLgG4QusuqFvq9PGwi07c6o-GgD4eI5PZgTRisLKrrPC-HEnKY76geg0eYFb_NuasU3AV3N123uTBHL_XwuCurShre3AoV0wm88x"
+                src="/images/paris-map.webp"
               />
             </div>
           </div>

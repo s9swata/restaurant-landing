@@ -299,7 +299,7 @@ export default function ReservationsSection() {
                     <img
                       className="w-full h-full object-cover"
                       alt="Chef's seasonal pasta pairing"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1jkjm-bbxoOGCCrlPWik44TJ5A7QHiNsr0dX-fIl78F8lvgxHcy6vX-UWdMtVsR6rRbSrmrw-8_3E7QiES5rEBueDDTT82Qmk-i1wDFXdCAWI6GEGY6aDqqGAq8hg0NT3klt3-rXqvwYUau6zGxL6gsEKL-lWvvDY4JlKn6i0CKYkFxIwZ0hhXne6V9FCWQla87nciXKuO4quIq0sAHf7Y5Br7qoQCtHwggrT4Sa2JeH_No3QFquvQ7GpQ2f90GFb0e_uEMg_AjqC"
+                      src="/images/seasonal-pasta.webp"
                     />
                   </div>
                   <div className="flex-1">
@@ -327,7 +327,7 @@ export default function ReservationsSection() {
               <img
                 className="w-full h-64 object-cover grayscale brightness-[0.4] transition-transform duration-1000 group-hover:scale-110"
                 alt="Pouring wine into an elegant glass"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1GO12fKoCllb9wlNQuC9yofUlGoPqVMdiGhA9xkVb68dbnpAJKqVKKLoiP4ESfx-aeItogmWuLrz55P3-7p1SFUcRQJs9mWbGoPg46AinJtwMhayIpQUNDhf22kE-rZcp_wJ2bFFadwzGva4WjCxoxuyOPx_Zes-BW5uJY0T"
+                src="/images/wine-pour.png"
               />
               <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />
               <div className="absolute bottom-8 left-8 right-8 text-center">

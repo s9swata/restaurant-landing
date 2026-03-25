@@ -37,7 +37,7 @@ export default function TastingMenuSection() {
           <img
             className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-40 group-hover:scale-110 transition-transform duration-1000"
             data-alt="Abstract close-up of charcoal embers glowing with a soft orange light, evoking a kitchen fire"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC7YHrKTv_chNyB7xBav-g8JcCBlYJI20A_tUWxFwZCK5v8Sdorgx_4267IMPfjSnhsfwgimUef3TH5PK7EMFIVplwuD7c7X1pptOFrSsP8o1SGvzFC3Kz2Ggoqq53mFsvRxodIOwH636jmRUmbIa4oD6Xya9xODKjSuvRpCIE92cjk_qRfsbZcd8TZZc2IlanQP2AV7-Beldjol4Q_OXowIPbw-IKZ3TkmhvFl8FoikwdFK45-u1PH20V5m7Ehng66lZqNs3SoX1s"
+            src="/images/tasting-menu.webp"
           />
           <div className="relative z-10 text-center">
             <h3 className="font-headline text-2xl mb-4 italic">Dolci</h3>

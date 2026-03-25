@@ -59,7 +59,7 @@ export default function AntipastiSection() {
               alt="Antipasti presentation"
               className="w-full h-full object-cover grayscale-[0.2] hover:scale-105 transition-transform duration-700"
               data-alt="Gourmet Italian appetizer on a textured ceramic plate with artistic plating of seafood and herbs in dramatic lighting"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp8SQ1P4bVYTATGm_p7UATieD4Bz0_FsYo-V1dxT_emQ2IytY28Zg9SM9adp8dtebSZD3tuGjGsmvKHmmoGK8-6M_oz0BHi6O55nzYxAxCpar3jZQ_EfE9JvlaWiQEvFCXhD36wE_oUH-dxSf42-yl7jtisNzbrzAINIPG1AbuhmsUlGmIGVg-DT8siitK8fxiLR9p8Xn-Yi4asvjzjW9DOqQ3cCQOMeh_6BI86QmRrKrhEfv7HpcssyGJEz3SbQQIR3D1CAbYW-lV"
+              src="/images/antipasto-1.webp"
             />
           </div>
           <div className="grid grid-cols-2 gap-8">
@@ -68,7 +68,7 @@ export default function AntipastiSection() {
                 alt="Fine dining details"
                 className="w-full h-full object-cover"
                 data-alt="Close-up of artisan bread and high-quality olive oil in a minimalist setting with soft afternoon shadows"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4XByMJHBDQaSqyHZ5IB-B40fzTAm7bGjU4VrNkca8erHdvO8F0dDo7eVJwV6Oyw6VPVFpWC0g0k8NzheuMKGmzMwLQFyBrkRybfne1LKKdRcwHEMu21JNbJVVyycKmiXNNFibpt12T9Nn3kxscWz6_hvWm5R1UZpQ8tVRsMID98SmgdpmY433lKOsuJAsdpTHdUOPhuGIo7PiEcD8rGGTHggLibKvDkb551ZboQYJDTCGIf9PBMv-PQ1MtQBSHwFOUEevLaCFrURy"
+                src="/images/antipasto-2.webp"
               />
             </div>
             <div className="flex flex-col justify-end p-4 border-l border-outline-variant/20">

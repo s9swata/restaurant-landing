@@ -8,7 +8,7 @@ export default function PrimiSection() {
               alt="Primi pasta"
               className="w-full h-64 sm:h-96 md:h-[600px] object-cover"
               data-alt="Exquisite handmade pasta dish with golden truffles and a rich creamy sauce on an elegant white plate"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOGpcw0Xh_ReHsjm8vGjxTQPz-MNCTFsPD5G5-5ZUDLtyLZgLX7wwr8dsTE6hp2JGmA5oaGrVRMQ6R6H-RIBghIpNJ_tHzpK4qFYQTsre2VQPWuMfujL318orKfhj5FwxgEMENVe0KQMzpDe4-Cf60aV6L4ZlOa5o-RD2WlFP5-ra1luxtI27Px79rWnG29PVHje6AmuiHrKcZraEWm4DRkeQ2PFLTiQuUqqHBt9JygXZtig1wwfNdabPJ63CYnryLdT09NGGdapNN"
+              src="/images/primi-pasta.webp"
             />
             <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-surface p-8 hidden md:block shadow-xl">
               <span className="font-label text-[10px] uppercase tracking-widest text-primary block mb-4">
