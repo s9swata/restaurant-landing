@@ -49,7 +49,7 @@ export default function ReservationsSection() {
                 {/* Calendar */}
                 <div className="space-y-6">
                   <div className="flex justify-between items-center mb-4">
-                    <h4 className="font-headline text-xl italic">October 2024</h4>
+                    <h4 className="font-headline text-xl italic">October 2026</h4>
                     <div className="flex gap-4">
                       <span className="material-symbols-outlined cursor-pointer text-outline hover:text-primary transition-colors">chevron_left</span>
                       <span className="material-symbols-outlined cursor-pointer text-outline hover:text-primary transition-colors">chevron_right</span>
@@ -88,11 +88,10 @@ export default function ReservationsSection() {
                     ].map(({ time, active }) => (
                       <button
                         key={time}
-                        className={`py-3 px-4 border text-sm font-label rounded-sm text-center transition-all ${
-                          active
-                            ? 'border-primary text-primary bg-primary/5'
-                            : 'border-outline-variant hover:border-primary hover:text-primary'
-                        }`}
+                        className={`py-3 px-4 border text-sm font-label rounded-sm text-center transition-all ${active
+                          ? 'border-primary text-primary bg-primary/5'
+                          : 'border-outline-variant hover:border-primary hover:text-primary'
+                          }`}
                       >
                         {time}
                       </button>
@@ -118,11 +117,10 @@ export default function ReservationsSection() {
                 {['1', '2', '3', '4', '5+'].map((n) => (
                   <button
                     key={n}
-                    className={`w-14 h-14 border flex items-center justify-center font-label transition-all ${
-                      n === '2'
-                        ? 'border-2 border-primary text-primary font-bold bg-primary/5'
-                        : 'border-outline-variant hover:border-primary hover:text-primary'
-                    }`}
+                    className={`w-14 h-14 border flex items-center justify-center font-label transition-all ${n === '2'
+                      ? 'border-2 border-primary text-primary font-bold bg-primary/5'
+                      : 'border-outline-variant hover:border-primary hover:text-primary'
+                      }`}
                   >
                     {n}
                   </button>
@@ -200,7 +198,7 @@ export default function ReservationsSection() {
               {/* Booking Summary */}
               <div className="space-y-6 border-y border-outline-variant/30 py-10 relative z-10">
                 {[
-                  { label: 'Date', value: 'Oct 14, 2024' },
+                  { label: 'Date', value: 'Oct 14, 2026' },
                   { label: 'Time', value: '19:30' },
                   { label: 'Guests', value: '2 People' },
                 ].map(({ label, value }) => (

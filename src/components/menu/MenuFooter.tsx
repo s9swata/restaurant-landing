@@ -56,7 +56,7 @@ export default function MenuFooter() {
             </a>
           </div>
           <div className="pt-8 border-t border-outline-variant/20 font-label text-sm tracking-widest uppercase text-outline">
-            © 2024 L&apos;Oro d&apos;Italia Paris. Excellence in Viticulture &amp; Cuisine.
+            © 2026 L&apos;Oro d&apos;Italia Paris. Excellence in Viticulture &amp; Cuisine.
           </div>
         </div>
       </div>

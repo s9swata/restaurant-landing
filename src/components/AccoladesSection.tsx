@@ -25,7 +25,7 @@ export default function AccoladesSection() {
               </span>
             </div>
             <p className="font-label text-[10px] uppercase tracking-[0.2em]">
-              Michelin Guide 2024
+              Michelin Guide 2026
             </p>
           </div>
           <div className="text-center">

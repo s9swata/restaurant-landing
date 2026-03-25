@@ -4,7 +4,7 @@ export default function MenuHero() {
       <div className="flex flex-col md:flex-row items-end justify-between gap-8 border-b border-outline-variant/15 pb-12">
         <div className="max-w-2xl">
           <span className="font-label text-xs uppercase tracking-[0.3em] text-primary mb-4 block">
-            Spring Collection 2024
+            Spring Collection 2026
           </span>
           <h1 className="font-headline text-6xl md:text-8xl font-light leading-tight mb-8">
             The Culinary Anthology

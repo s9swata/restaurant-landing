@@ -51,7 +51,7 @@ export default function HeroSection() {
           </span>
         </div>
         <p className="font-label text-[10px] uppercase tracking-widest text-surface mt-2">
-          Michelin Excellence 2024
+          Michelin Excellence 2026
         </p>
       </div>
     </section>

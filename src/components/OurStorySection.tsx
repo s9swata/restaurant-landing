@@ -1,6 +1,6 @@
 export default function OurStorySection() {
   return (
-    <section className="py-32 px-12 bg-surface">
+    <section id="our-story" className="py-32 px-12 bg-surface">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
         <div className="relative order-2 lg:order-1">
           <div className="aspect-[4/5] relative overflow-hidden rounded-sm editorial-shadow">

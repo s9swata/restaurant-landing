@@ -1,6 +1,6 @@
 export default function ExperienceLocationSection() {
   return (
-    <section className="py-32 bg-surface">
+    <section id="location" className="py-32 bg-surface">
       <div className="max-w-7xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
         <div className="lg:col-span-7 flex flex-col justify-between">
           <div>
