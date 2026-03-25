@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu | Oro e Cenere</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#bfcbae",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#261900",
+              "inverse-on-surface": "#f3f0ea",
+              "on-surface-variant": "#4e4639",
+              "on-primary": "#ffffff",
+              "outline-variant": "#d1c5b4",
+              "surface-container-highest": "#e5e2dc",
+              "primary-fixed-dim": "#e9c176",
+              "on-primary-container": "#4e3700",
+              "inverse-primary": "#e9c176",
+              "outline": "#7f7667",
+              "secondary": "#57624b",
+              "tertiary": "#5f5e5e",
+              "secondary-container": "#dbe7c9",
+              "on-secondary": "#ffffff",
+              "surface": "#fcf9f3",
+              "surface-container-low": "#f6f3ed",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "secondary-fixed": "#dbe7c9",
+              "error-container": "#ffdad6",
+              "on-secondary-container": "#5d6850",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-tertiary-fixed-variant": "#474747",
+              "primary": "#775a19",
+              "background": "#fcf9f3",
+              "primary-fixed": "#ffdea5",
+              "on-background": "#1c1c18",
+              "surface-variant": "#e5e2dc",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "on-secondary-fixed-variant": "#404a34",
+              "surface-dim": "#dcdad4",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed": "#151e0c",
+              "tertiary-fixed": "#e4e2e1",
+              "surface-container": "#f0eee8",
+              "primary-container": "#c5a059",
+              "on-surface": "#1c1c18",
+              "on-primary-fixed-variant": "#5d4201",
+              "surface-container-high": "#ebe8e2",
+              "inverse-surface": "#31312d",
+              "surface-bright": "#fcf9f3",
+              "on-tertiary-container": "#3b3b3b",
+              "on-tertiary": "#ffffff",
+              "tertiary-container": "#a7a5a5",
+              "surface-tint": "#775a19"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-image-mask {
+            clip-path: inset(0 0 0 0);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f3]/80 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center px-8 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-headline font-light uppercase tracking-tighter text-on-background">
+                Oro e Cenere
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-headline font-light tracking-wide text-primary border-b border-primary pb-1" href="#">Menu</a>
+<a class="font-headline font-light tracking-wide text-on-background opacity-70 hover:opacity-100 transition-opacity" href="#">Reservations</a>
+<a class="font-headline font-light tracking-wide text-on-background opacity-70 hover:opacity-100 transition-opacity" href="#">Our Story</a>
+<a class="font-headline font-light tracking-wide text-on-background opacity-70 hover:opacity-100 transition-opacity" href="#">Private Dining</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-sm font-label text-sm uppercase tracking-widest hover:bg-primary-container transition-colors duration-300">
+                Book a Table
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<header class="px-8 mb-32 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between gap-8 border-b border-outline-variant/15 pb-12">
+<div class="max-w-2xl">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-primary mb-4 block">Spring Collection 2024</span>
+<h1 class="font-headline text-6xl md:text-8xl font-light leading-tight mb-8">The Culinary Anthology</h1>
+<p class="font-body text-lg text-outline leading-relaxed max-w-lg">
+                        A curated journey through the Italian landscape, translated into texture and fire. Every dish is a dialogue between tradition and the avant-garde.
+                    </p>
+</div>
+<div class="flex flex-col items-end gap-2 italic font-headline text-primary">
+<span>Executive Chef Lorenzo Bianchi</span>
+<span class="text-sm opacity-60">Michelin ☆☆☆</span>
+</div>
+</div>
+</header>
+<!-- Menu Section: Antipasti -->
+<section class="mb-40 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-5 sticky top-40">
+<h2 class="font-headline text-4xl mb-6">Antipasti</h2>
+<div class="w-24 h-px bg-primary-container mb-12"></div>
+<div class="space-y-16">
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline text-xl text-on-surface">Crudo di Scampi</h3>
+<span class="text-primary font-label text-sm tracking-widest">38</span>
+</div>
+<p class="text-outline font-body leading-relaxed mb-3">Langoustines from the Tyrrhenian Sea, cold-pressed citrus oil, sea fennel, and volcanic salt.</p>
+<span class="inline-block bg-secondary-container/40 px-3 py-1 rounded-sm text-on-secondary-container font-label text-[10px] uppercase tracking-wider">Seasonal Garnish</span>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline text-xl text-on-surface">Burrata in Cenere</h3>
+<span class="text-primary font-label text-sm tracking-widest">32</span>
+</div>
+<p class="text-outline font-body leading-relaxed">Hand-tied burrata, vegetable ash, confit heirloom tomatoes, and aged balsamic pearls.</p>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline text-xl text-on-surface">Carpaccio di Wagyu</h3>
+<span class="text-primary font-label text-sm tracking-widest">45</span>
+</div>
+<p class="text-outline font-body leading-relaxed">A5 Kagoshima wagyu, porcini dust, truffle emulsion, and toasted hazelnuts.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 flex flex-col gap-12">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container-highest">
+<img alt="Antipasti presentation" class="w-full h-full object-cover grayscale-[0.2] hover:scale-105 transition-transform duration-700" data-alt="Gourmet Italian appetizer on a textured ceramic plate with artistic plating of seafood and herbs in dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp8SQ1P4bVYTATGm_p7UATieD4Bz0_FsYo-V1dxT_emQ2IytY28Zg9SM9adp8dtebSZD3tuGjGsmvKHmmoGK8-6M_oz0BHi6O55nzYxAxCpar3jZQ_EfE9JvlaWiQEvFCXhD36wE_oUH-dxSf42-yl7jtisNzbrzAINIPG1AbuhmsUlGmIGVg-DT8siitK8fxiLR9p8Xn-Yi4asvjzjW9DOqQ3cCQOMeh_6BI86QmRrKrhEfv7HpcssyGJEz3SbQQIR3D1CAbYW-lV"/>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="aspect-square bg-surface-container-low overflow-hidden">
+<img alt="Fine dining details" class="w-full h-full object-cover" data-alt="Close-up of artisan bread and high-quality olive oil in a minimalist setting with soft afternoon shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4XByMJHBDQaSqyHZ5IB-B40fzTAm7bGjU4VrNkca8erHdvO8F0dDo7eVJwV6Oyw6VPVFpWC0g0k8NzheuMKGmzMwLQFyBrkRybfne1LKKdRcwHEMu21JNbJVVyycKmiXNNFibpt12T9Nn3kxscWz6_hvWm5R1UZpQ8tVRsMID98SmgdpmY433lKOsuJAsdpTHdUOPhuGIo7PiEcD8rGGTHggLibKvDkb551ZboQYJDTCGIf9PBMv-PQ1MtQBSHwFOUEevLaCFrURy"/>
+</div>
+<div class="flex flex-col justify-end p-4 border-l border-outline-variant/20">
+<p class="font-headline italic text-lg text-secondary">"The beginning of the ritual."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section: Primi (Asymmetric Switch) -->
+<section class="mb-40 bg-surface-container-low py-32 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-7 order-2 md:order-1">
+<div class="relative mb-24">
+<img alt="Primi pasta" class="w-full h-[600px] object-cover" data-alt="Exquisite handmade pasta dish with golden truffles and a rich creamy sauce on an elegant white plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOGpcw0Xh_ReHsjm8vGjxTQPz-MNCTFsPD5G5-5ZUDLtyLZgLX7wwr8dsTE6hp2JGmA5oaGrVRMQ6R6H-RIBghIpNJ_tHzpK4qFYQTsre2VQPWuMfujL318orKfhj5FwxgEMENVe0KQMzpDe4-Cf60aV6L4ZlOa5o-RD2WlFP5-ra1luxtI27Px79rWnG29PVHje6AmuiHrKcZraEWm4DRkeQ2PFLTiQuUqqHBt9JygXZtig1wwfNdabPJ63CYnryLdT09NGGdapNN"/>
+<div class="absolute -bottom-12 -right-12 w-64 h-64 bg-surface p-8 hidden md:block shadow-xl">
+<span class="font-label text-[10px] uppercase tracking-widest text-primary block mb-4">Chef's Signature</span>
+<p class="font-headline text-sm leading-relaxed italic">The Tagliolini is hand-rolled daily at dawn, using 40 egg yolks per kilogram of flour.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 order-1 md:order-2">
+<h2 class="font-headline text-4xl mb-6">Primi</h2>
+<div class="w-24 h-px bg-primary-container mb-12"></div>
+<div class="space-y-16">
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline text-xl text-on-surface">Tagliolini al Tartufo</h3>
+<span class="text-primary font-label text-sm tracking-widest">52</span>
+</div>
+<p class="text-outline font-body leading-relaxed mb-3">House-made 40-egg yolk tagliolini, mountain butter, and freshly shaved black winter truffle.</p>
+<span class="inline-block bg-secondary-container/40 px-3 py-1 rounded-sm text-on-secondary-container font-label text-[10px] uppercase tracking-wider">Limited Availability</span>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline text-xl text-on-surface">Risotto all'Oro</h3>
+<span class="text-primary font-label text-sm tracking-widest">48</span>
+</div>
+<p class="text-outline font-body leading-relaxed">Acquerello carnaroli rice, 24k gold leaf, saffron pistils from Abruzzo, and bone marrow essence.</p>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline text-xl text-on-surface">Tortelli di Zucca</h3>
+<span class="text-primary font-label text-sm tracking-widest">42</span>
+</div>
+<p class="text-outline font-body leading-relaxed">Roasted pumpkin filling, crushed amaretti, sage brown butter, and parmigiano reggiano 36 months.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section: Secondi -->
+<section class="mb-40 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-5 sticky top-40">
+<h2 class="font-headline text-4xl mb-6">Secondi</h2>
+<div class="w-24 h-px bg-primary-container mb-12"></div>
+<div class="space-y-16">
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline text-xl text-on-surface">Filetto di Rombo</h3>
+<span class="text-primary font-label text-sm tracking-widest">58</span>
+</div>
+<p class="text-outline font-body leading-relaxed">Wild turbot fillet, charcoal-grilled artichokes, and a light champagne emulsion.</p>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline text-xl text-on-surface">Agnello di Montagna</h3>
+<span class="text-primary font-label text-sm tracking-widest">65</span>
+</div>
+<p class="text-outline font-body leading-relaxed mb-3">Dorset lamb rack in herb crust, smoked eggplant purée, and wild berry jus.</p>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline text-xl text-on-surface">Guancia al Barolo</h3>
+<span class="text-primary font-label text-sm tracking-widest">62</span>
+</div>
+<p class="text-outline font-body leading-relaxed">36-hour slow-cooked beef cheek in Barolo wine, parsnip cream, and dehydrated kale.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-7">
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2 relative aspect-video overflow-hidden">
+<img alt="Secondi main course" class="w-full h-full object-cover" data-alt="Beautifully seared lamb rack served with roasted vegetables and a glossy red wine reduction on dark slate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtQN3pUrqK2yiguYcGrYtYN3WJXp1LZZ2PIigu8VVfurdBuMlWKsP4lBpe6xGhRiaoJ5Y7HNpmU3zsUIzeyCO5Vy_tv7PY7Dp83G-Z7JXo1Y75eG5sP9OAp6-aPyah_p35M1YlGFLBcqpq2eDdxJZ0A29GTMwur0lGg9AmCMiH8_m-KkO1R6Avz-HTHvc2fTX36Uvy76c_906D6yvFIlyv_CznT10o6X4DeFZWo6K8iymooxyyURH7M38MSugemlR78IVswR8qBlLP"/>
+</div>
+<div class="aspect-[3/4] overflow-hidden">
+<img alt="Detail of ingredients" class="w-full h-full object-cover" data-alt="Fresh purple artichokes and garden herbs on a marble surface with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACXb62mvREDhRGQQTh4U9TGp3leh7C3zqL8TzbCi1AmxS86tZbPq-O3OepLux7RGZR-52_4GTGYDxwbaU2wY9sIlTEhHNMjjpq54ldofnRB43TSqD_dFk9uGjiiZNxPuVGBwM6iCfiuyW3LmAreBzvxYsIpQwiRp6Ski9UT7hW0r38s2xf8a2VTuvSkammuw5gUtQeRpkXMrL_AUUeZpFa1ovEOrpM9ixnMp8PTi6rTnOC1Xx5Xo2OIL46AEKPI0L5jcAeVJLYO2kW"/>
+</div>
+<div class="aspect-[3/4] overflow-hidden mt-12">
+<img alt="Wine pairing" class="w-full h-full object-cover" data-alt="A glass of deep red Barolo wine standing next to a bottle in a dim, sophisticated cellar atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxhIwjFM6mMCQJl1FnixVo54TfqmEVe6YQUprO5PPB698gJKRCJ3Bcv8IV3CMTzOPAEnSQDAN78zhwt8TgynMfdf4HEYaf_I1urf3g9nstUSNHH_2M9k_BKqiOs1LRFI-rALm9T-2nikOSfmfJtkGLp68kvdivyqnaa3hKE7bb5N7SGMTl46Qe9P_Pmt846ehCNkXz6TDUox5zRiDiv4KSrxVJgRUgiaDFKP5GCXXVHrqF2fFFgttj5EmSe-e4LVOA6QApGqtzsHWc"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tasting Menu CTA Section (Bento Style) -->
+<section class="mb-40 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-primary text-on-primary p-12 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="font-label text-xs uppercase tracking-[0.3em] opacity-80 mb-6 block">The Ultimate Expression</span>
+<h2 class="font-headline text-5xl font-light mb-8">Gran Degustazione "Cenere"</h2>
+<p class="font-body text-lg opacity-90 max-w-md leading-relaxed">
+                            A 10-course odyssey curated by Chef Bianchi, exploring the elemental relationship between fire, smoke, and pure ingredients.
+                        </p>
+</div>
+<div class="flex items-center gap-8 border-t border-on-primary/20 pt-8 mt-12">
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase opacity-60">Full Experience</span>
+<span class="font-headline text-2xl">245</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase opacity-60">Wine Pairing</span>
+<span class="font-headline text-2xl">180</span>
+</div>
+<button class="ml-auto bg-surface-container-lowest text-primary px-8 py-3 rounded-sm font-label text-xs uppercase tracking-[0.2em] hover:bg-surface-container-high transition-colors">Reserve Now</button>
+</div>
+</div>
+<div class="bg-surface-container-high relative overflow-hidden flex items-center justify-center p-8 group">
+<img class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-40 group-hover:scale-110 transition-transform duration-1000" data-alt="Abstract close-up of charcoal embers glowing with a soft orange light, evoking a kitchen fire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC7YHrKTv_chNyB7xBav-g8JcCBlYJI20A_tUWxFwZCK5v8Sdorgx_4267IMPfjSnhsfwgimUef3TH5PK7EMFIVplwuD7c7X1pptOFrSsP8o1SGvzFC3Kz2Ggoqq53mFsvRxodIOwH636jmRUmbIa4oD6Xya9xODKjSuvRpCIE92cjk_qRfsbZcd8TZZc2IlanQP2AV7-Beldjol4Q_OXowIPbw-IKZ3TkmhvFl8FoikwdFK45-u1PH20V5m7Ehng66lZqNs3SoX1s"/>
+<div class="relative z-10 text-center">
+<h3 class="font-headline text-2xl mb-4 italic">Dolci</h3>
+<p class="font-body text-sm text-outline mb-6">The sweetness of the embers.</p>
+<a class="font-label text-[10px] uppercase tracking-widest border-b border-outline pb-1 hover:text-primary transition-colors" href="#">View Selection</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Quote -->
+<section class="py-40 px-8 text-center max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-12">restaurant</span>
+<blockquote class="font-headline text-3xl md:text-5xl font-light leading-tight italic text-on-surface/80">
+                "Cuisine is the art of memory and transformation. At Oro e Cenere, we honor the gold of the soil and the ash of the hearth."
+            </blockquote>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3ed] dark:bg-[#151512] w-full py-20 px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto items-start text-center md:text-left">
+<div class="space-y-6">
+<div class="text-xl font-headline text-on-background">Oro e Cenere</div>
+<p class="font-body text-sm text-outline max-w-xs leading-relaxed">
+                    Via della Conciliazione, 15<br/>
+                    00193 Roma RM, Italy
+                </p>
+<p class="font-body text-sm text-outline">
+                    reservations@oroecenere.it<br/>
+                    +39 06 123 4567
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-primary mb-2">Connect</span>
+<a class="font-body text-sm text-outline hover:text-on-background transition-colors" href="#">Instagram</a>
+<a class="font-body text-sm text-outline hover:text-on-background transition-colors" href="#">Michelin Guide</a>
+<a class="font-body text-sm text-outline hover:text-on-background transition-colors" href="#">TableCheck</a>
+</div>
+<div class="flex flex-col space-y-6">
+<div class="flex justify-center md:justify-start gap-8">
+<a class="font-label text-sm tracking-widest uppercase text-outline hover:text-on-background transition-colors" href="#">Privacy Policy</a>
+<a class="font-label text-sm tracking-widest uppercase text-outline hover:text-on-background transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="pt-8 border-t border-outline-variant/20 font-label text-sm tracking-widest uppercase text-outline">
+                    © 2024 Oro e Cenere. Crafted for the Discerning Palette.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
