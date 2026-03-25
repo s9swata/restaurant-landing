@@ -4,17 +4,17 @@ export default function MenuFooter() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto items-start text-center md:text-left">
         <div className="space-y-6">
           <div className="text-xl font-headline text-on-background">
-            Oro e Cenere
+            L&apos;Oro d&apos;Italia
           </div>
           <p className="font-body text-sm text-outline max-w-xs leading-relaxed">
-            Via della Conciliazione, 15
+            22 Rue de Rivoli
             <br />
-            00193 Roma RM, Italy
+            75001 Paris, France
           </p>
           <p className="font-body text-sm text-outline">
-            reservations@oroecenere.it
+            reservations@lorditalia.fr
             <br />
-            +39 06 123 4567
+            +33 1 40 20 40 00
           </p>
         </div>
         <div className="flex flex-col space-y-4">
@@ -56,7 +56,7 @@ export default function MenuFooter() {
             </a>
           </div>
           <div className="pt-8 border-t border-outline-variant/20 font-label text-sm tracking-widest uppercase text-outline">
-            © 2024 Oro e Cenere. Crafted for the Discerning Palette.
+            © 2024 L&apos;Oro d&apos;Italia Paris. Excellence in Viticulture &amp; Cuisine.
           </div>
         </div>
       </div>

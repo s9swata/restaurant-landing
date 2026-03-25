@@ -7,13 +7,13 @@ export default function TopNavBar() {
       <div className="hidden md:flex items-center gap-12 font-['Noto_Serif'] font-light tracking-wide">
         <a
           className="text-on-surface opacity-80 hover:opacity-100 hover:text-primary transition-all"
-          href="#"
+          href="#menu"
         >
           Menu
         </a>
         <a
           className="text-primary border-b border-primary/30 pb-1 hover:opacity-100 transition-all"
-          href="#"
+          href="#reservations"
         >
           Reservations
         </a>
