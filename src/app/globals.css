@@ -65,6 +65,7 @@
   --radius-full: 0.75rem;
 }
 
+
 :root {
   --background: #fcf9f3;
   --foreground: #1c1c18;
@@ -83,4 +84,71 @@
 
 .editorial-shadow {
     box-shadow: 0 20px 50px rgba(28, 28, 24, 0.05);
+}
+
+/* ── Global headline tracking ── */
+.font-headline,
+[class*="font-headline"] {
+    letter-spacing: -0.02em;
+}
+
+/* ── Hero entry animations ── */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUpIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes kenBurns {
+    from {
+        transform: scale(1.08);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.hero-img {
+    animation: kenBurns 10s ease-out forwards;
+}
+
+.hero-label {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease-out 0.2s forwards;
+}
+
+.hero-title {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.55s forwards;
+}
+
+.hero-body {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease-out 0.9s forwards;
+}
+
+.hero-ctas {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease-out 1.15s forwards;
+}
+
+.hero-accolade {
+    opacity: 0;
+    animation: slideUpIn 0.6s ease-out 1.4s forwards;
 }

@@ -75,9 +75,9 @@ export default function TopNavBar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="hidden md:block bg-primary text-on-primary px-8 py-3 rounded-sm font-label text-xs uppercase tracking-[0.2em] scale-95 duration-300 ease-in-out hover:scale-100 transition-transform">
+          <a href="#reservations" className="hidden md:block bg-primary text-on-primary px-8 py-3 rounded-sm font-label text-xs uppercase tracking-[0.2em] scale-95 duration-300 ease-in-out hover:scale-100 transition-transform text-center">
             Book a Table
-          </button>
+          </a>
           {/* Hamburger — mobile only */}
           <button
             className="md:hidden flex flex-col gap-[5px] p-2"

@@ -26,7 +26,7 @@ export default function OurStorySection() {
           <span className="font-label text-xs uppercase tracking-[0.3em] text-primary mb-6 block">
             The Heritage
           </span>
-          <h2 className="font-headline text-4xl md:text-5xl text-on-surface mb-8 leading-tight font-light">
+          <h2 className="font-headline text-4xl md:text-6xl text-on-surface mb-8 leading-tight font-light">
             Where Rome Whispers<br />
             to the Seine
           </h2>

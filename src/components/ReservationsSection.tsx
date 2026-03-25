@@ -1,5 +1,65 @@
 'use client';
+
+import { useState, useMemo } from 'react';
+
+/* ─── Types ─── */
+type Nullable<T> = T | null;
+
+const TIME_SLOTS = ['19:00', '19:30', '20:00', '20:30', '21:00', '21:30'] as const;
+const DAY_LABELS = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'] as const;
+const GUEST_OPTIONS = ['1', '2', '3', '4', '5+'] as const;
+
+function getMonthMatrix(year: number, month: number) {
+  // Returns a flat array of day numbers (or null for empty slots) for a 7-col grid
+  const firstDay = new Date(year, month, 1).getDay(); // 0=Sun
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  // Convert Sunday-first to Monday-first offset
+  const offset = (firstDay + 6) % 7;
+  const cells: Nullable<number>[] = Array(offset).fill(null);
+  for (let d = 1; d <= daysInMonth; d++) cells.push(d);
+  return cells;
+}
+
+const MONTH_NAMES = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+];
+
 export default function ReservationsSection() {
+  const today = useMemo(() => new Date(), []);
+
+  const [viewYear, setViewYear] = useState(today.getFullYear());
+  const [viewMonth, setViewMonth] = useState(today.getMonth());
+  const [selectedDay, setSelectedDay] = useState<Nullable<number>>(null);
+  const [selectedTime, setSelectedTime] = useState<Nullable<string>>(null);
+  const [selectedGuests, setSelectedGuests] = useState<string>('2');
+
+  const cells = useMemo(() => getMonthMatrix(viewYear, viewMonth), [viewYear, viewMonth]);
+
+  const isPastDay = (day: number) => {
+    const d = new Date(viewYear, viewMonth, day);
+    d.setHours(0, 0, 0, 0);
+    const t = new Date(today);
+    t.setHours(0, 0, 0, 0);
+    return d < t;
+  };
+
+  const formattedDate = selectedDay
+    ? `${MONTH_NAMES[viewMonth].slice(0, 3)} ${selectedDay}, ${viewYear}`
+    : '—';
+
+  const goToPrevMonth = () => {
+    if (viewMonth === 0) { setViewMonth(11); setViewYear(y => y - 1); }
+    else setViewMonth(m => m - 1);
+    setSelectedDay(null);
+  };
+
+  const goToNextMonth = () => {
+    if (viewMonth === 11) { setViewMonth(0); setViewYear(y => y + 1); }
+    else setViewMonth(m => m + 1);
+    setSelectedDay(null);
+  };
+
   return (
     <section id="reservations" className="py-16 md:py-32 bg-surface-container-low">
       <div className="max-w-6xl mx-auto px-4 md:px-12">
@@ -41,7 +101,7 @@ export default function ReservationsSection() {
             {/* Step 1: Date & Time */}
             <div className="p-8 bg-surface rounded-sm editorial-shadow">
               <div className="flex justify-between items-center mb-8">
-                <h3 className="font-headline text-2xl italic">Select Date & Time</h3>
+                <h3 className="font-headline text-2xl italic">Select Date &amp; Time</h3>
                 <span className="text-[10px] font-label uppercase tracking-widest text-outline">Step 01</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -49,28 +109,49 @@ export default function ReservationsSection() {
                 {/* Calendar */}
                 <div className="space-y-6">
                   <div className="flex justify-between items-center mb-4">
-                    <h4 className="font-headline text-xl italic">October 2026</h4>
+                    <h4 className="font-headline text-xl italic">
+                      {MONTH_NAMES[viewMonth]} {viewYear}
+                    </h4>
                     <div className="flex gap-4">
-                      <span className="material-symbols-outlined cursor-pointer text-outline hover:text-primary transition-colors">chevron_left</span>
-                      <span className="material-symbols-outlined cursor-pointer text-outline hover:text-primary transition-colors">chevron_right</span>
+                      <button
+                        onClick={goToPrevMonth}
+                        aria-label="Previous month"
+                        className="material-symbols-outlined cursor-pointer text-outline hover:text-primary transition-colors select-none"
+                      >
+                        chevron_left
+                      </button>
+                      <button
+                        onClick={goToNextMonth}
+                        aria-label="Next month"
+                        className="material-symbols-outlined cursor-pointer text-outline hover:text-primary transition-colors select-none"
+                      >
+                        chevron_right
+                      </button>
                     </div>
                   </div>
                   <div className="grid grid-cols-7 gap-2 text-center text-[10px] uppercase tracking-widest text-outline mb-4">
-                    {['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'].map((d) => (
-                      <span key={d}>{d}</span>
-                    ))}
+                    {DAY_LABELS.map((d) => <span key={d}>{d}</span>)}
                   </div>
-                  <div className="grid grid-cols-7 gap-y-4 text-center text-sm font-label">
-                    {['26', '27', '28', '29', '30'].map((d) => (
-                      <span key={d} className="text-outline/40">{d}</span>
-                    ))}
-                    {['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'].map((d) => (
-                      <span key={d} className="hover:text-primary cursor-pointer transition-colors">{d}</span>
-                    ))}
-                    <span className="bg-primary text-on-primary w-8 h-8 flex items-center justify-center mx-auto rounded-sm">14</span>
-                    {['15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'].map((d) => (
-                      <span key={d} className="hover:text-primary cursor-pointer transition-colors">{d}</span>
-                    ))}
+                  <div className="grid grid-cols-7 gap-y-3 text-center text-sm font-label">
+                    {cells.map((day, i) => {
+                      if (day === null) return <span key={`empty-${i}`} />;
+                      const past = isPastDay(day);
+                      const isSelected = selectedDay === day;
+                      return (
+                        <button
+                          key={day}
+                          disabled={past}
+                          onClick={() => setSelectedDay(day)}
+                          className={`w-8 h-8 flex items-center justify-center mx-auto rounded-sm transition-all text-sm font-label
+                            ${past ? 'text-outline/30 cursor-not-allowed' : ''}
+                            ${isSelected ? 'bg-primary text-on-primary' : ''}
+                            ${!past && !isSelected ? 'hover:text-primary hover:bg-primary/10 cursor-pointer' : ''}
+                          `}
+                        >
+                          {day}
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
 
@@ -78,24 +159,22 @@ export default function ReservationsSection() {
                 <div className="space-y-6">
                   <h4 className="font-headline text-xl italic mb-4">Available Times</h4>
                   <div className="grid grid-cols-2 gap-3">
-                    {[
-                      { time: '19:00', active: false },
-                      { time: '19:30', active: true },
-                      { time: '20:00', active: false },
-                      { time: '20:30', active: false },
-                      { time: '21:00', active: false },
-                      { time: '21:30', active: false },
-                    ].map(({ time, active }) => (
-                      <button
-                        key={time}
-                        className={`py-3 px-4 border text-sm font-label rounded-sm text-center transition-all ${active
-                          ? 'border-primary text-primary bg-primary/5'
-                          : 'border-outline-variant hover:border-primary hover:text-primary'
+                    {TIME_SLOTS.map((time) => {
+                      const active = selectedTime === time;
+                      return (
+                        <button
+                          key={time}
+                          onClick={() => setSelectedTime(active ? null : time)}
+                          className={`py-3 px-4 border text-sm font-label rounded-sm text-center transition-all ${
+                            active
+                              ? 'border-primary text-primary bg-primary/5 font-medium'
+                              : 'border-outline-variant hover:border-primary hover:text-primary'
                           }`}
-                      >
-                        {time}
-                      </button>
-                    ))}
+                        >
+                          {time}
+                        </button>
+                      );
+                    })}
                   </div>
                   <div className="p-4 bg-secondary-container/20 flex items-start gap-3 rounded-sm">
                     <span className="material-symbols-outlined text-secondary text-sm">info</span>
@@ -114,13 +193,15 @@ export default function ReservationsSection() {
                 <span className="text-[10px] font-label uppercase tracking-widest text-outline">Step 02</span>
               </div>
               <div className="flex flex-wrap gap-3">
-                {['1', '2', '3', '4', '5+'].map((n) => (
+                {GUEST_OPTIONS.map((n) => (
                   <button
                     key={n}
-                    className={`w-14 h-14 border flex items-center justify-center font-label transition-all ${n === '2'
-                      ? 'border-2 border-primary text-primary font-bold bg-primary/5'
-                      : 'border-outline-variant hover:border-primary hover:text-primary'
-                      }`}
+                    onClick={() => setSelectedGuests(n)}
+                    className={`w-14 h-14 border flex items-center justify-center font-label transition-all ${
+                      selectedGuests === n
+                        ? 'border-2 border-primary text-primary font-bold bg-primary/5'
+                        : 'border-outline-variant hover:border-primary hover:text-primary'
+                    }`}
                   >
                     {n}
                   </button>
@@ -195,16 +276,18 @@ export default function ReservationsSection() {
                 <h3 className="font-headline text-4xl">L&apos;Oro d&apos;Italia</h3>
               </div>
 
-              {/* Booking Summary */}
+              {/* Booking Summary — reactive */}
               <div className="space-y-6 border-y border-outline-variant/30 py-10 relative z-10">
                 {[
-                  { label: 'Date', value: 'Oct 14, 2026' },
-                  { label: 'Time', value: '19:30' },
-                  { label: 'Guests', value: '2 People' },
+                  { label: 'Date', value: formattedDate },
+                  { label: 'Time', value: selectedTime ?? '—' },
+                  { label: 'Guests', value: selectedGuests ? `${selectedGuests} ${selectedGuests === '1' ? 'Person' : 'People'}` : '—' },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex justify-between items-center">
                     <span className="text-[11px] uppercase tracking-widest text-outline">{label}</span>
-                    <span className="text-sm font-label">{value}</span>
+                    <span className={`text-sm font-label transition-all ${value === '—' ? 'text-outline/40' : 'text-on-surface'}`}>
+                      {value}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -244,7 +327,7 @@ export default function ReservationsSection() {
               <img
                 className="w-full h-64 object-cover grayscale brightness-[0.4] transition-transform duration-1000 group-hover:scale-110"
                 alt="Pouring wine into an elegant glass"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1GO12fKoCllb9wlNQuC9yofUlGoPqVMdiGhA9xkVb68dbnpAJKqVKKLoiP4ESiQCJNroW2ueKD2U2MCDmLn1gRJT5Rf5vCUXoWp94L5ye3BGpW5-TXb-aEMsLgLZOfY8_YCCVx9m730I5IPP7Vn9Ns74hJasv9t-ESfx-aeItogmWuLrz55P3-7p1SFUcRQJs9mWbGoPg46AinJtwMhayIpQUNDhf22kE-rZcp_wJ2bFFadwzGva4WjCxoxuyOPx_Zes-BW5uJY0T"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1GO12fKoCllb9wlNQuC9yofUlGoPqVMdiGhA9xkVb68dbnpAJKqVKKLoiP4ESfx-aeItogmWuLrz55P3-7p1SFUcRQJs9mWbGoPg46AinJtwMhayIpQUNDhf22kE-rZcp_wJ2bFFadwzGva4WjCxoxuyOPx_Zes-BW5uJY0T"
               />
               <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />
               <div className="absolute bottom-8 left-8 right-8 text-center">
