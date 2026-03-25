@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L'Oro d'Italia | Michelin Dining in Paris</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Manrope:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed": "#151e0c",
+              "inverse-on-surface": "#f3f0ea",
+              "surface-variant": "#e5e2dc",
+              "secondary-fixed": "#dbe7c9",
+              "primary": "#775a19",
+              "surface-bright": "#fcf9f3",
+              "outline": "#7f7667",
+              "secondary": "#57624b",
+              "secondary-fixed-dim": "#bfcbae",
+              "inverse-surface": "#31312d",
+              "surface-tint": "#775a19",
+              "on-background": "#1c1c18",
+              "on-primary-fixed": "#261900",
+              "on-error-container": "#93000a",
+              "on-surface-variant": "#4e4639",
+              "on-surface": "#1c1c18",
+              "on-error": "#ffffff",
+              "on-primary-container": "#4e3700",
+              "surface-container-highest": "#e5e2dc",
+              "on-primary-fixed-variant": "#5d4201",
+              "primary-container": "#c5a059",
+              "primary-fixed": "#ffdea5",
+              "surface-dim": "#dcdad4",
+              "on-secondary-container": "#5d6850",
+              "background": "#fcf9f3",
+              "on-tertiary-container": "#3b3b3b",
+              "outline-variant": "#d1c5b4",
+              "tertiary-fixed": "#e4e2e1",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f6f3ed",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#474747",
+              "tertiary": "#5f5e5e",
+              "tertiary-container": "#a7a5a5",
+              "surface-container": "#f0eee8",
+              "error": "#ba1a1a",
+              "on-secondary-fixed-variant": "#404a34",
+              "secondary-container": "#dbe7c9",
+              "error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "on-secondary": "#ffffff",
+              "inverse-primary": "#e9c176",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#ebe8e2",
+              "surface": "#fcf9f3",
+              "primary-fixed-dim": "#e9c176"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 50px rgba(28, 28, 24, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-xl flex justify-between items-center px-12 py-6 w-full max-w-none transition-colors duration-500">
+<div class="text-2xl font-serif italic text-[#775a19] dark:text-[#c5a059]">L'Oro d'Italia</div>
+<div class="hidden md:flex items-center gap-12 font-['Noto_Serif'] font-light tracking-wide">
+<a class="text-[#1c1c18] dark:text-[#fcf9f3] opacity-80 hover:opacity-100 hover:text-[#775a19] transition-all" href="#">Menu</a>
+<a class="text-[#775a19] dark:text-[#c5a059] border-b border-[#775a19]/30 pb-1 hover:opacity-100 hover:text-[#775a19] transition-all" href="#">Reservations</a>
+<a class="text-[#1c1c18] dark:text-[#fcf9f3] opacity-80 hover:opacity-100 hover:text-[#775a19] transition-all" href="#">Our Story</a>
+<a class="text-[#1c1c18] dark:text-[#fcf9f3] opacity-80 hover:opacity-100 hover:text-[#775a19] transition-all" href="#">Location</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-sm font-label text-xs uppercase tracking-[0.2em] scale-95 duration-300 ease-in-out hover:scale-100 transition-transform">
+            Book a Table
+        </button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-on-surface/30 z-10"></div>
+<img alt="Elegant Parisian dining room" class="absolute inset-0 w-full h-full object-cover" data-alt="Luxurious dining room with Eiffel Tower view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJwa61HZBhd6B4RPO7gmUE9JMbiyvcIvIWbYNWdHo_6ssO0-hwIjsZ9O4XJ0uIFWm53N3WaNYjGAQW9JOmDn_f3WahsxXWKd1TZeQhNPtiJmWWhmRePtUefdZEQnszf78F1geVaw7tnmows8jv0p7m1RdhCPE2bM563i-ajZrEEFAffElPiholDmiv5CCykn6Dr33JwogYpY-fzu76IdAg7gi9vFfDhl1EZIYoJ9o-UYg_TmZR52RKH0esZyAvjm0RQb--3ofLAM4x"/>
+<div class="relative z-20 text-center px-6 max-w-5xl">
+<span class="block font-label text-xs uppercase tracking-[0.4em] text-surface mb-6 opacity-90">Paris · 1st Arrondissement</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-surface leading-tight mb-8 font-light">
+                    The Soul of Italy,<br/>
+<span class="italic font-normal">the Heart of Paris</span>
+</h1>
+<p class="font-body text-lg md:text-xl text-surface/90 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                    A culinary journey where tradition meets contemporary artistry, crafted under the light of three Michelin stars.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-sm font-label text-xs uppercase tracking-[0.2em] transition-all hover:bg-primary-container">
+                        Reservations
+                    </button>
+<button class="border border-surface/30 backdrop-blur-md text-surface px-10 py-5 rounded-sm font-label text-xs uppercase tracking-[0.2em] transition-all hover:bg-surface hover:text-on-surface">
+                        View Menu
+                    </button>
+</div>
+</div>
+<div class="absolute bottom-12 left-12 z-20 hidden lg:block">
+<div class="flex gap-1">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-label text-[10px] uppercase tracking-widest text-surface mt-2">Michelin Excellence 2024</p>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="aspect-[4/5] relative overflow-hidden rounded-sm editorial-shadow">
+<img alt="Chef plating a gourmet dish" class="w-full h-full object-cover scale-105" data-alt="Chef focused on plating fine dining pasta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV9YvPVVly0amqKbyEf0koU-LwB9j3VRfYjwmI1LtLJ0qFlgqJQSSLTGZpeQ_RFCzrOk796rjY08geMpx3t-KqxQHsOdNFORHw30Yp78AC1krkD771_EDDQpvyCkppn3fAHSBVKBJP_iwhFAyx73UanWuxMv7S4tCIkeEi3ST7DeDR2VTWRvTw0l_3RT_Cdavs69OCNbq2foTL5CbRw5rssWE1P1VgCIgQ8NgF0fLBKA5Oo95s4p_OalYk5kkYjJVG0lfPKH6hp26U"/>
+</div>
+<!-- Ingredient Overlay Signature Component -->
+<div class="absolute -bottom-8 -right-8 bg-secondary-container/40 backdrop-blur-md p-8 rounded-sm max-w-xs hidden md:block">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-secondary-container mb-2">Seasonal Highlight</p>
+<p class="font-headline italic text-on-secondary-container text-lg leading-relaxed">"The Alba White Truffle, arriving this October from the Piedmont hills."</p>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-primary mb-6 block">The Heritage</span>
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-8 leading-tight font-light">Where Rome Whispers<br/>to the Seine</h2>
+<div class="space-y-6 text-on-surface-variant font-light leading-relaxed text-lg">
+<p>
+                            L'Oro d'Italia was born from a singular vision: to transplant the rustic, sun-drenched soul of the Italian countryside into the refined architectural elegance of Paris’s 1st Arrondissement.
+                        </p>
+<p>
+                            Our Michelin-starred heritage is rooted in the respect for the ingredient. We source our flour from centennial mills in Puglia and our herbs from secret gardens in the Île-de-France, creating a dialogue between two of the world's most storied culinary cultures.
+                        </p>
+<p class="italic font-headline text-on-surface mt-8">
+                            "Gastronomy is the only art form that enters the body. At L'Oro, we ensure it also touches the soul."
+                        </p>
+</div>
+<div class="mt-12 pt-12 border-t border-outline-variant/15 flex items-center gap-6">
+<img alt="Chef portrait" class="w-16 h-16 rounded-full object-cover" data-alt="Portrait of our Executive Chef" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj2ts8fYh0pPIiMl2zAQCZdAXeTJtd35ECwLfV1TxU8Sj23aKqWp9z1umbzuTMW_9XVmKqaBXsfcn3Rtit8iZLFwzqR1Js-XdHBfurZQiKE5xyFJ3jVFN62iAO2xJ4SsdzCVKb3g8iJASYl6lu53MwYgYUlIORhuX1Lu4xST0VOKgUyvPtsubBK5tazMKNpO1IchEEQgUdjQ91UufDhwsIFQnc-aDtVo-PvpTeDXOL0D-cOF0V0Y2Vuh_ccBeU_V_qxsWjjOJHnEhI"/>
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface">Marco Valente</p>
+<p class="font-body text-sm text-outline">Executive Chef &amp; Founder</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Menu Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-12">
+<div class="text-center mb-24">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-primary mb-4 block">Seasonal Selection</span>
+<h2 class="font-headline text-5xl text-on-surface font-light">The Signature Menu</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Dish 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-square overflow-hidden mb-8 rounded-sm transition-transform duration-700 group-hover:scale-[1.02]">
+<img alt="Truffle Tagliatelle" class="w-full h-full object-cover" data-alt="Close up of truffle pasta on white plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDedUyUKHPQFBZsjZw4QMVnhkBav3ysd90az8AQf5ql-v90A4bMpPjA1VY2M2tPPXdYFkvg393WZMz_9J_mR4IMOc2K7B1t-RhKFqHCF9-xIKlOtEESJRQBOPk71NYku_h_SLqkxIBj4Iq7JnB_nK0Q6uda9XSSI_U3gwb1fRVpj_QTFt2YuGM57hqMog7gOAvFjxaA9knEIqDGwPnJRonY_WedeMjYmNlmZVY2hFpxBGVyufPuYgFIJZGKAVrp88PEqu_9gVn0MU_r"/>
+</div>
+<h3 class="font-headline text-2xl mb-3 text-on-surface">Truffle Tagliatelle</h3>
+<p class="text-on-surface-variant font-light text-sm mb-4 leading-relaxed">Hand-cut pasta, 36-month aged Parmigiano Reggiano, and freshly shaved Umbrian black truffles.</p>
+<p class="font-label text-xs tracking-widest text-primary uppercase">€48</p>
+</div>
+<!-- Dish 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-square overflow-hidden mb-8 rounded-sm transition-transform duration-700 group-hover:scale-[1.02]">
+<img alt="Osso Buco Parisian" class="w-full h-full object-cover" data-alt="Braised veal with saffron risotto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkW4YYpsgf19RIfiPmbEbD7Cpq4FN2jAlqqRGuLpwTPm44aXKKtWYUZX8cL_z-eCKnIFy1ddPyMgYnJBGBLcp4XDsfMNNlVCuqkKytMQIBAXKwpRCBbGzu7b6d_52f3lLJgcdWlJpdTgD0uS4QGubXAvWMBsjOnd8HRVOZXYzuObvHmenSUZXLRrEvevWQ3HKo-Yz0oN7vKiv-zpvFU_lUeaJz3pEBmZxxxjcyNwJDGLFjohdJRsDTYHSokerTS7-ONz6tJN81LWQL"/>
+</div>
+<h3 class="font-headline text-2xl mb-3 text-on-surface">Osso Buco à la Parisienne</h3>
+<p class="text-on-surface-variant font-light text-sm mb-4 leading-relaxed">Slow-braised milk-fed veal shank, saffron risotto, and a delicate bone marrow foam.</p>
+<p class="font-label text-xs tracking-widest text-primary uppercase">€62</p>
+</div>
+<!-- Dish 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-square overflow-hidden mb-8 rounded-sm transition-transform duration-700 group-hover:scale-[1.02]">
+<img alt="Signature Dessert" class="w-full h-full object-cover" data-alt="Gourmet tiramisu with gold leaf decoration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkIhzPTgCnE-OIIl_zZlUYQfbjWUlxap8AZPg0vdLwpXKBqzPhGYn_dhNq0CvDcP3MtZytEnQzkSAfleVmIgH4AW7pytgKyQFPytP8Hoc1CRuMOM5oR6U8B4ZsDetNKDcsuyoMOn-OAx8we4A60M5jHjr0b3yWPrpVGFe4OXUXNw8xOD7cvqmfYiOdG2z4wQdpKoJAdW38gwd0x1TPnaw82pjxrrW4Fd6klTcf9asn8evBWPYn3a0eTy5lwbulY5Cm5luSKdXCuwq6"/>
+</div>
+<h3 class="font-headline text-2xl mb-3 text-on-surface">Gold Leaf Tiramisu</h3>
+<p class="text-on-surface-variant font-light text-sm mb-4 leading-relaxed">Espresso-soaked savoiardi, mascarpone cream, and delicate 24k Italian gold leaf finish.</p>
+<p class="font-label text-xs tracking-widest text-primary uppercase">€32</p>
+</div>
+</div>
+<div class="mt-24 text-center">
+<button class="border border-outline-variant/30 px-12 py-5 rounded-sm font-label text-xs uppercase tracking-[0.2em] transition-all hover:bg-surface-container-high">
+                        Explore Full Menu
+                    </button>
+</div>
+</div>
+</section>
+<!-- Experience & Location Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div>
+<span class="font-label text-xs uppercase tracking-[0.3em] text-primary mb-6 block">The Atmosphere</span>
+<h2 class="font-headline text-5xl text-on-surface mb-8 font-light leading-tight">An Evening Above<br/>the City of Light</h2>
+<p class="text-on-surface-variant text-lg font-light leading-relaxed max-w-xl mb-12">
+                            Located just steps from the Louvre, our dining room offers an intimate escape from the bustling streets. As the sun sets, the room transforms into a golden sanctuary, mirrored by the twinkling lights of the Eiffel Tower visible from our panoramic terrace.
+                        </p>
+</div>
+<div class="bg-surface-container-highest p-10 rounded-sm editorial-shadow">
+<div class="flex items-start gap-4 mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<p class="font-label text-xs uppercase tracking-[0.2em] text-on-surface mb-1">Address</p>
+<p class="text-on-surface-variant font-light">22 Rue de Rivoli, 75001 Paris, France</p>
+</div>
+</div>
+<div class="flex items-start gap-4 mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+<div>
+<p class="font-label text-xs uppercase tracking-[0.2em] text-on-surface mb-1">Hours</p>
+<p class="text-on-surface-variant font-light">Tuesday — Saturday: 19:00 - 23:30</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 text-primary font-label text-xs uppercase tracking-[0.2em] hover:opacity-70 transition-opacity" href="#">
+                            Get Directions 
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-5 h-[600px] relative overflow-hidden rounded-sm">
+<img alt="Eiffel Tower at night from restaurant" class="w-full h-full object-cover" data-alt="View of Eiffel Tower at night from a window seat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD52kPGeaE59a91uLNA8mr0hLJ07JuFGxjeKUfvCQ_lndwvzIiuLh2S8gGZplHtsAfop4Cfo7ZKVcSCez0n7mlmWwpcJrAn_JHw2JcurU4VF1GqAlXuugtYlFwGQXSp0nK5SOVV1ELYLtTSd1tf-STaBEoVT3Hb6eW-iTFO2Cwlm_fxScIgPYcAfxYuKDMFOwTtg_upi7MZ3Ij0tkT0eVoZCAJPKNDgpLWMAeHAP3YTG8M3_M6xadP1i5zPXIaQuXkopcP8BGnjPeiu"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
+<div class="absolute bottom-10 left-10 right-10">
+<div class="aspect-video w-full rounded-sm overflow-hidden opacity-90 shadow-2xl">
+<img alt="Map of Paris 1st" class="w-full h-full object-cover grayscale" data-alt="Stylized map of Paris center" data-location="Paris, France" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYvFiv-jD7Y5pWtRD8oloEvMZS4q_Gi-X1YYpvx4Ezz6wXe5vOalvQg_krvDdgrHvEAREQ9cnGZiUTUabtx87e1mIb4yEdZi0Es9xK5i2Hi_B9LHA9or1yJS7hMVy-TCVpBB253MNEoXkAhCv6zgAlqZZV9-w2tYmWvQDnJ-m9HLgG4QusuqFvq9PGwi07c6o-GgD4eI5PZgTRisLKrrPC-HEnKY76geg0eYFb_NuasU3AV3N123uTBHL_XwuCurShre3AoV0wm88x"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Accolades Section -->
+<section class="py-24 bg-surface border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-12">
+<div class="flex flex-wrap justify-between items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
+<div class="flex flex-col items-center">
+<div class="flex gap-1 mb-2">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em]">Michelin Guide 2024</p>
+</div>
+<div class="text-center">
+<p class="font-headline italic text-2xl text-on-surface mb-1">Le Monde</p>
+<p class="font-label text-[10px] uppercase tracking-[0.2em]">"A Masterpiece of Fusion"</p>
+</div>
+<div class="text-center">
+<p class="font-headline italic text-2xl text-on-surface mb-1">The New York Times</p>
+<p class="font-label text-[10px] uppercase tracking-[0.2em]">"Paris's Finest Italian Soul"</p>
+</div>
+<div class="text-center">
+<p class="font-headline italic text-2xl text-on-surface mb-1">Vogue Living</p>
+<p class="font-label text-[10px] uppercase tracking-[0.2em]">"Atmospheric Perfection"</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3ed] dark:bg-[#1c1c18] w-full py-20 px-12 mt-auto flex flex-col md:flex-row justify-between items-center gap-8 w-full border-t border-[#d1c5b4]/15">
+<div class="flex flex-col items-center md:items-start">
+<div class="text-lg font-serif text-[#1c1c18] dark:text-[#fcf9f3] mb-4">L'Oro d'Italia</div>
+<p class="font-['Manrope'] text-xs uppercase tracking-[0.2em] text-[#7f7667] max-w-xs text-center md:text-left">
+                © 2024 L'Oro d'Italia Paris. Excellence in Viticulture &amp; Cuisine.
+            </p>
+</div>
+<div class="flex gap-8 font-['Manrope'] text-xs uppercase tracking-[0.2em]">
+<a class="text-[#7f7667] hover:text-[#775a19] transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-[#7f7667] hover:text-[#775a19] transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-[#7f7667] hover:text-[#775a19] transition-colors opacity-80 hover:opacity-100" href="#">Press Kit</a>
+<a class="text-[#7f7667] hover:text-[#775a19] transition-colors opacity-80 hover:opacity-100" href="#">Careers</a>
+</div>
+<div class="flex gap-4">
+<a class="text-[#775a19] hover:opacity-70 transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="text-[#775a19] hover:opacity-70 transition-all" href="#">
+<span class="material-symbols-outlined">camera</span>
+</a>
+</div>
+</footer>
+</body></html>
