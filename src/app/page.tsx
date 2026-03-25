@@ -4,6 +4,7 @@ import OurStorySection from '@/components/OurStorySection';
 import SignatureMenuSection from '@/components/SignatureMenuSection';
 import ExperienceLocationSection from '@/components/ExperienceLocationSection';
 import AccoladesSection from '@/components/AccoladesSection';
+import ReservationsSection from '@/components/ReservationsSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <SignatureMenuSection />
         <ExperienceLocationSection />
         <AccoladesSection />
+        <ReservationsSection />
       </main>
       <Footer />
     </>
