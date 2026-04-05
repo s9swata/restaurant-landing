@@ -5,8 +5,8 @@ export default function QuoteSection() {
         restaurant
       </span>
       <blockquote className="font-headline text-3xl md:text-5xl font-light leading-tight italic text-on-surface/80">
-        "Cuisine is the art of memory and transformation. At Oro e Cenere, we
-        honor the gold of the soil and the ash of the hearth."
+        &quot;Cuisine is the art of memory and transformation. At Oro e Cenere, we
+        honor the gold of the soil and the ash of the hearth.&quot;
       </blockquote>
     </section>
   );

@@ -51,7 +51,7 @@ export default function DrinksWineSection() {
             />
             <div className="absolute top-8 right-8 bg-surface/95 backdrop-blur-md p-6 max-w-xs hidden sm:block border-l-2 border-primary/20">
               <p className="font-headline text-base md:text-lg italic text-primary">
-                "Wine is the geographic signature of the land, translated into a liquid poem."
+                &quot;Wine is the geographic signature of the land, translated into a liquid poem.&quot;
               </p>
               <span className="block mt-4 font-label text-[10px] uppercase tracking-widest opacity-60">
                 Sommelier Matteo Romano

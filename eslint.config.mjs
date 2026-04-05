@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "generate-qr-script.js",
+    "restaurant-menu-qr.png",
   ]),
 ]);
 

@@ -48,7 +48,7 @@ export default function AntipastiSection() {
             </div>
             <div className="flex flex-col justify-end p-4 border-l border-outline-variant/20">
               <p className="font-headline italic text-lg text-secondary">
-                "The beginning of the ritual."
+                &quot;The beginning of the ritual.&quot;
               </p>
             </div>
           </div>

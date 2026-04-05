@@ -55,7 +55,7 @@ export default function ContorniDolciSection() {
             />
             <div className="absolute top-8 right-8 bg-surface-container/80 backdrop-blur-md px-6 py-4 border border-white/10 hidden md:block">
               <p className="font-headline italic text-lg text-primary">
-                "Pasticceria d'Autore"
+                &quot;Pasticceria d&apos;Autore&quot;
               </p>
               <p className="font-label text-[10px] uppercase tracking-widest mt-1">
                 Fine Patisserie

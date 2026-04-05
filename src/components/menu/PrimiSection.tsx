@@ -13,7 +13,7 @@ export default function PrimiSection() {
             />
             <div className="absolute -bottom-6 -right-6 md:-bottom-12 md:-right-12 w-48 h-48 md:w-64 md:h-64 bg-surface p-4 md:p-8 hidden sm:block shadow-xl">
               <span className="font-label text-[9px] md:text-[10px] uppercase tracking-widest text-primary block mb-2 md:mb-4">
-                Chef's Signature
+                Chef&apos;s Signature
               </span>
               <p className="font-headline text-xs md:text-sm leading-relaxed italic">
                 The Tagliolini is hand-rolled daily at dawn, using 40 egg yolks

@@ -9,10 +9,10 @@ export default function TastingMenuSection() {
         <span className="font-label text-[10px] uppercase tracking-[0.5em] text-primary block mb-6">
           The Ultimate Experience
         </span>
-        <h2 className="font-headline text-4xl md:text-7xl mb-8">Percorso d'Oro</h2>
+        <h2 className="font-headline text-4xl md:text-7xl mb-8">Percorso d&apos;Oro</h2>
         <p className="font-body text-base md:text-lg text-outline max-w-2xl mx-auto leading-relaxed italic opacity-80">
-          "A curated seven-course journey through the heart of Italy, 
-          reimagined for the modern palate."
+          &quot;A curated seven-course journey through the heart of Italy, 
+          reimagined for the modern palate.&quot;
         </p>
       </div>
 

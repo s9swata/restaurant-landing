@@ -45,7 +45,7 @@ export default function SecondiSection() {
               />
             </div>
             <div className="flex flex-col justify-center p-4 border-l border-outline-variant/20 italic font-headline text-primary">
-               "The essence of land and sea, balanced by fire."
+               &quot;The essence of land and sea, balanced by fire.&quot;
             </div>
           </div>
         </div>
