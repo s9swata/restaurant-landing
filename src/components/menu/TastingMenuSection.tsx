@@ -1,56 +1,71 @@
+import MenuItem from './MenuItem';
+
 export default function TastingMenuSection() {
   return (
-    <section className="mb-20 md:mb-40 px-4 md:px-8 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="md:col-span-2 bg-primary text-on-primary p-6 md:p-12 flex flex-col justify-between min-h-[400px]">
-          <div>
-            <span className="font-label text-xs uppercase tracking-[0.3em] opacity-80 mb-6 block">
-              The Ultimate Expression
-            </span>
-            <h2 className="font-headline text-5xl font-light mb-8">
-              Gran Degustazione "Cenere"
-            </h2>
-            <p className="font-body text-lg opacity-90 max-w-md leading-relaxed">
-              A 10-course odyssey curated by Chef Bianchi, exploring the
-              elemental relationship between fire, smoke, and pure ingredients.
-            </p>
+    <section className="mb-20 md:mb-40 py-24 md:py-48 px-4 md:px-8 bg-surface text-on-surface relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+      
+      <div className="max-w-4xl mx-auto text-center mb-24">
+        <span className="font-label text-[10px] uppercase tracking-[0.5em] text-primary block mb-6">
+          The Ultimate Experience
+        </span>
+        <h2 className="font-headline text-5xl md:text-7xl mb-8">Percorso d'Oro</h2>
+        <p className="font-body text-lg text-outline max-w-2xl mx-auto leading-relaxed italic">
+          "A curated seven-course journey through the heart of Italy, 
+          reimagined for the modern palate."
+        </p>
+      </div>
+
+      <div className="max-w-3xl mx-auto space-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-b border-outline-variant/30 py-16">
+          <div className="space-y-10">
+            <MenuItem
+              image="/images/items/crudo-scampi.png"
+              title="I. Benvenuto"
+              price=""
+              description="Chef's daily inspiration from the sea."
+            />
+            <MenuItem
+              image="/images/items/burrata.png"
+              title="II. L'Inizio"
+              price=""
+              description="Burrata in cenere, volcanic essence."
+            />
+            <MenuItem
+              image="/images/items/risotto-gold.png"
+              title="III. La Tradizione"
+              price=""
+              description="Saffron risotto with 24k gold leaf."
+            />
           </div>
-          <div className="flex items-center gap-8 border-t border-on-primary/20 pt-8 mt-12">
-            <div className="flex flex-col">
-              <span className="font-label text-[10px] uppercase opacity-60">
-                Full Experience
-              </span>
-              <span className="font-headline text-2xl">245</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-label text-[10px] uppercase opacity-60">
-                Wine Pairing
-              </span>
-              <span className="font-headline text-2xl">180</span>
-            </div>
-            <button className="ml-auto bg-surface-container-lowest text-primary px-8 py-3 rounded-sm font-label text-xs uppercase tracking-[0.2em] hover:bg-surface-container-high transition-colors">
-              Reserve Now
-            </button>
+          <div className="space-y-10">
+            <MenuItem
+              image="/images/items/tagliolini-truffle.png"
+              title="IV. Il Pregiato"
+              price=""
+              description="Hand-rolled tagliolini, black winter truffle."
+            />
+            <MenuItem
+              image="/images/items/beef-cheek.png"
+              title="V. La Memoria"
+              price=""
+              description="Slow-cooked beef cheek, Barolo reduction."
+            />
+            <MenuItem
+              image="/images/items/tiramisu.png"
+              title="VI. La Dolcezza"
+              price=""
+              description="Pistachio tiramisù, deconstructed."
+            />
           </div>
         </div>
-        <div className="bg-surface-container-high relative overflow-hidden flex items-center justify-center p-8 group">
-          <img
-            className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-40 group-hover:scale-110 transition-transform duration-1000"
-            data-alt="Abstract close-up of charcoal embers glowing with a soft orange light, evoking a kitchen fire"
-            src="/images/tasting-menu.webp"
-          />
-          <div className="relative z-10 text-center">
-            <h3 className="font-headline text-2xl mb-4 italic">Dolci</h3>
-            <p className="font-body text-sm text-outline mb-6">
-              The sweetness of the embers.
-            </p>
-            <a
-              className="font-label text-[10px] uppercase tracking-widest border-b border-outline pb-1 hover:text-primary transition-colors"
-              href="#"
-            >
-              View Selection
-            </a>
-          </div>
+
+        <div className="text-center">
+            <div className="inline-block p-12 bg-surface-container-low border border-primary/5">
+                <p className="font-label text-sm tracking-widest text-primary mb-4">DEGUSTAZIONE</p>
+                <p className="font-headline text-3xl mb-2">185 per person</p>
+                <p className="text-outline text-xs uppercase tracking-widest">+95 Optional Wine Pairing</p>
+            </div>
         </div>
       </div>
     </section>

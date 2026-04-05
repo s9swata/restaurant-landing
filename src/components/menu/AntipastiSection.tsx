@@ -1,3 +1,5 @@
+import MenuItem from './MenuItem';
+
 export default function AntipastiSection() {
   return (
     <section className="mb-20 md:mb-40 px-4 md:px-8 max-w-7xl mx-auto">
@@ -5,52 +7,26 @@ export default function AntipastiSection() {
         <div className="md:col-span-5 md:sticky top-40">
           <h2 className="font-headline text-4xl mb-6">Antipasti</h2>
           <div className="w-24 h-px bg-primary-container mb-12"></div>
-          <div className="space-y-16">
-            <div className="group cursor-default">
-              <div className="flex justify-between items-baseline mb-2">
-                <h3 className="font-headline text-xl text-on-surface">
-                  Crudo di Scampi
-                </h3>
-                <span className="text-primary font-label text-sm tracking-widest">
-                  38
-                </span>
-              </div>
-              <p className="text-outline font-body leading-relaxed mb-3">
-                Langoustines from the Tyrrhenian Sea, cold-pressed citrus oil,
-                sea fennel, and volcanic salt.
-              </p>
-              <span className="inline-block bg-secondary-container/40 px-3 py-1 rounded-sm text-on-secondary-container font-label text-[10px] uppercase tracking-wider">
-                Seasonal Garnish
-              </span>
-            </div>
-            <div className="group cursor-default">
-              <div className="flex justify-between items-baseline mb-2">
-                <h3 className="font-headline text-xl text-on-surface">
-                  Burrata in Cenere
-                </h3>
-                <span className="text-primary font-label text-sm tracking-widest">
-                  32
-                </span>
-              </div>
-              <p className="text-outline font-body leading-relaxed">
-                Hand-tied burrata, vegetable ash, confit heirloom tomatoes, and
-                aged balsamic pearls.
-              </p>
-            </div>
-            <div className="group cursor-default">
-              <div className="flex justify-between items-baseline mb-2">
-                <h3 className="font-headline text-xl text-on-surface">
-                  Carpaccio di Wagyu
-                </h3>
-                <span className="text-primary font-label text-sm tracking-widest">
-                  45
-                </span>
-              </div>
-              <p className="text-outline font-body leading-relaxed">
-                A5 Kagoshima wagyu, porcini dust, truffle emulsion, and toasted
-                hazelnuts.
-              </p>
-            </div>
+          <div className="space-y-12">
+            <MenuItem
+              image="/images/items/crudo-scampi.png"
+              title="Crudo di Scampi"
+              price="38"
+              description="Langoustines from the Tyrrhenian Sea, cold-pressed citrus oil, sea fennel, and volcanic salt."
+              labels={["Seasonal Garnish"]}
+            />
+            <MenuItem
+              image="/images/items/burrata.png"
+              title="Burrata in Cenere"
+              price="32"
+              description="Hand-tied burrata, vegetable ash, confit heirloom tomatoes, and aged balsamic pearls."
+            />
+            <MenuItem
+              image="/images/items/wagyu-carpaccio.png"
+              title="Carpaccio di Wagyu"
+              price="45"
+              description="A5 Kagoshima wagyu, porcini dust, truffle emulsion, and toasted hazelnuts."
+            />
           </div>
         </div>
         <div className="md:col-span-7 flex flex-col gap-12">

@@ -1,12 +1,12 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-
+import Link from 'next/link';
 const NAV_LINKS = [
-  { label: 'Menu', href: '#menu', sectionId: 'menu' },
-  { label: 'Reservations', href: '#reservations', sectionId: 'reservations' },
-  { label: 'Our Story', href: '#our-story', sectionId: 'our-story' },
-  { label: 'Location', href: '#location', sectionId: 'location' },
+  { label: 'Menu', href: '/menu', sectionId: 'menu' },
+  { label: 'Reservations', href: '/#reservations', sectionId: 'reservations' },
+  { label: 'Our Story', href: '/#our-story', sectionId: 'our-story' },
+  { label: 'Location', href: '/#location', sectionId: 'location' },
 ] as const;
 
 type SectionId = (typeof NAV_LINKS)[number]['sectionId'] | '';
@@ -58,7 +58,7 @@ export default function TopNavBar() {
           {NAV_LINKS.map(({ label, href, sectionId }) => {
             const isActive = active === sectionId;
             return (
-              <a
+              <Link
                 key={sectionId}
                 href={href}
                 onClick={() => setActive(sectionId)}
@@ -69,15 +69,15 @@ export default function TopNavBar() {
                 }`}
               >
                 {label}
-              </a>
+              </Link>
             );
           })}
         </div>
 
         <div className="flex items-center gap-4">
-          <a href="#reservations" className="hidden md:block bg-primary text-on-primary px-8 py-3 rounded-sm font-label text-xs uppercase tracking-[0.2em] scale-95 duration-300 ease-in-out hover:scale-100 transition-transform text-center">
+          <Link href="/#reservations" className="hidden md:block bg-primary text-on-primary px-8 py-3 rounded-sm font-label text-xs uppercase tracking-[0.2em] scale-95 duration-300 ease-in-out hover:scale-100 transition-transform text-center">
             Book a Table
-          </a>
+          </Link>
           {/* Hamburger — mobile only */}
           <button
             className="md:hidden flex flex-col gap-[5px] p-2"
@@ -107,7 +107,7 @@ export default function TopNavBar() {
           {NAV_LINKS.map(({ label, href, sectionId }) => {
             const isActive = active === sectionId;
             return (
-              <a
+              <Link
                 key={sectionId}
                 href={href}
                 onClick={() => {
@@ -119,16 +119,16 @@ export default function TopNavBar() {
                 }`}
               >
                 {label}
-              </a>
+              </Link>
             );
           })}
-          <a
-            href="#reservations"
+          <Link
+            href="/#reservations"
             onClick={() => setMenuOpen(false)}
             className="mt-4 bg-primary text-on-primary py-3 rounded-sm font-label text-xs uppercase tracking-[0.2em] text-center"
           >
             Book a Table
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

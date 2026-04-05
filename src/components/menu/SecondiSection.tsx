@@ -1,3 +1,5 @@
+import MenuItem from './MenuItem';
+
 export default function SecondiSection() {
   return (
     <section className="mb-20 md:mb-40 px-4 md:px-8 max-w-7xl mx-auto">
@@ -5,49 +7,25 @@ export default function SecondiSection() {
         <div className="md:col-span-5 md:sticky top-40">
           <h2 className="font-headline text-4xl mb-6">Secondi</h2>
           <div className="w-24 h-px bg-primary-container mb-12"></div>
-          <div className="space-y-16">
-            <div className="group cursor-default">
-              <div className="flex justify-between items-baseline mb-2">
-                <h3 className="font-headline text-xl text-on-surface">
-                  Filetto di Rombo
-                </h3>
-                <span className="text-primary font-label text-sm tracking-widest">
-                  58
-                </span>
-              </div>
-              <p className="text-outline font-body leading-relaxed">
-                Wild turbot fillet, charcoal-grilled artichokes, and a light
-                champagne emulsion.
-              </p>
-            </div>
-            <div className="group cursor-default">
-              <div className="flex justify-between items-baseline mb-2">
-                <h3 className="font-headline text-xl text-on-surface">
-                  Agnello di Montagna
-                </h3>
-                <span className="text-primary font-label text-sm tracking-widest">
-                  65
-                </span>
-              </div>
-              <p className="text-outline font-body leading-relaxed mb-3">
-                Dorset lamb rack in herb crust, smoked eggplant purée, and wild
-                berry jus.
-              </p>
-            </div>
-            <div className="group cursor-default">
-              <div className="flex justify-between items-baseline mb-2">
-                <h3 className="font-headline text-xl text-on-surface">
-                  Guancia al Barolo
-                </h3>
-                <span className="text-primary font-label text-sm tracking-widest">
-                  62
-                </span>
-              </div>
-              <p className="text-outline font-body leading-relaxed">
-                36-hour slow-cooked beef cheek in Barolo wine, parsnip cream,
-                and dehydrated kale.
-              </p>
-            </div>
+          <div className="space-y-12">
+            <MenuItem
+              image="/images/items/turbot.png"
+              title="Filetto di Rombo"
+              price="58"
+              description="Wild turbot fillet, charcoal-grilled artichokes, and a light champagne emulsion."
+            />
+            <MenuItem
+              image="/images/items/lamb-rack.png"
+              title="Agnello di Montagna"
+              price="65"
+              description="Dorset lamb rack in herb crust, smoked eggplant purée, and wild berry jus."
+            />
+            <MenuItem
+              image="/images/items/beef-cheek.png"
+              title="Guancia al Barolo"
+              price="62"
+              description="36-hour slow-cooked beef cheek in Barolo wine, parsnip cream, and dehydrated kale."
+            />
           </div>
         </div>
         <div className="md:col-span-7">

@@ -1,3 +1,5 @@
+import MenuItem from './MenuItem';
+
 export default function PrimiSection() {
   return (
     <section className="mb-20 md:mb-40 bg-surface-container-low py-16 md:py-32 px-4 md:px-8">
@@ -7,7 +9,6 @@ export default function PrimiSection() {
             <img
               alt="Primi pasta"
               className="w-full h-64 sm:h-96 md:h-[600px] object-cover"
-              data-alt="Exquisite handmade pasta dish with golden truffles and a rich creamy sauce on an elegant white plate"
               src="/images/primi-pasta.webp"
             />
             <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-surface p-8 hidden md:block shadow-xl">
@@ -24,52 +25,26 @@ export default function PrimiSection() {
         <div className="md:col-span-5 order-1 md:order-2">
           <h2 className="font-headline text-4xl mb-6">Primi</h2>
           <div className="w-24 h-px bg-primary-container mb-12"></div>
-          <div className="space-y-16">
-            <div className="group cursor-default">
-              <div className="flex justify-between items-baseline mb-2">
-                <h3 className="font-headline text-xl text-on-surface">
-                  Tagliolini al Tartufo
-                </h3>
-                <span className="text-primary font-label text-sm tracking-widest">
-                  52
-                </span>
-              </div>
-              <p className="text-outline font-body leading-relaxed mb-3">
-                House-made 40-egg yolk tagliolini, mountain butter, and freshly
-                shaved black winter truffle.
-              </p>
-              <span className="inline-block bg-secondary-container/40 px-3 py-1 rounded-sm text-on-secondary-container font-label text-[10px] uppercase tracking-wider">
-                Limited Availability
-              </span>
-            </div>
-            <div className="group cursor-default">
-              <div className="flex justify-between items-baseline mb-2">
-                <h3 className="font-headline text-xl text-on-surface">
-                  Risotto all'Oro
-                </h3>
-                <span className="text-primary font-label text-sm tracking-widest">
-                  48
-                </span>
-              </div>
-              <p className="text-outline font-body leading-relaxed">
-                Acquerello carnaroli rice, 24k gold leaf, saffron pistils from
-                Abruzzo, and bone marrow essence.
-              </p>
-            </div>
-            <div className="group cursor-default">
-              <div className="flex justify-between items-baseline mb-2">
-                <h3 className="font-headline text-xl text-on-surface">
-                  Tortelli di Zucca
-                </h3>
-                <span className="text-primary font-label text-sm tracking-widest">
-                  42
-                </span>
-              </div>
-              <p className="text-outline font-body leading-relaxed">
-                Roasted pumpkin filling, crushed amaretti, sage brown butter,
-                and parmigiano reggiano 36 months.
-              </p>
-            </div>
+          <div className="space-y-12">
+            <MenuItem
+              image="/images/items/tagliolini-truffle.png"
+              title="Tagliolini al Tartufo"
+              price="52"
+              description="House-made 40-egg yolk tagliolini, mountain butter, and freshly shaved black winter truffle."
+              labels={["Limited Availability"]}
+            />
+            <MenuItem
+              image="/images/items/risotto-gold.png"
+              title="Risotto all'Oro"
+              price="48"
+              description="Acquerello carnaroli rice, 24k gold leaf, saffron pistils from Abruzzo, and bone marrow essence."
+            />
+            <MenuItem
+              image="/images/items/pasta-tortelli.png"
+              title="Tortelli di Zucca"
+              price="42"
+              description="Roasted pumpkin filling, crushed amaretti, sage brown butter, and parmigiano reggiano 36 months."
+            />
           </div>
         </div>
       </div>
