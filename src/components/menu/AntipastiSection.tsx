@@ -2,8 +2,8 @@ import MenuItem from './MenuItem';
 
 export default function AntipastiSection() {
   return (
-    <section className="mb-20 md:mb-40 px-4 md:px-8 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+    <section id="antipasti" className="mb-12 md:mb-32 px-4 md:px-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-start">
         <div className="md:col-span-5 md:sticky top-40">
           <h2 className="font-headline text-4xl mb-6">Antipasti</h2>
           <div className="w-24 h-px bg-primary-container mb-12"></div>
@@ -30,11 +30,10 @@ export default function AntipastiSection() {
           </div>
         </div>
         <div className="md:col-span-7 flex flex-col gap-12">
-          <div className="relative overflow-hidden aspect-[4/5] bg-surface-container-highest">
+          <div className="relative overflow-hidden aspect-video md:aspect-[4/5] bg-surface-container-highest">
             <img
               alt="Antipasti presentation"
               className="w-full h-full object-cover grayscale-[0.2] hover:scale-105 transition-transform duration-700"
-              data-alt="Gourmet Italian appetizer on a textured ceramic plate with artistic plating of seafood and herbs in dramatic lighting"
               src="/images/antipasto-1.webp"
             />
           </div>

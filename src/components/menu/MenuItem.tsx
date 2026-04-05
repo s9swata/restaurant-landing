@@ -12,7 +12,7 @@ export default function MenuItem({ image, title, price, description, labels }: M
   return (
     <div className="flex gap-6 items-start group">
       {/* 80px Square Image Container */}
-      <div className="w-20 h-20 flex-shrink-0 bg-surface-container-low overflow-hidden rounded-sm relative">
+      <div className="w-20 h-20 shrink-0 bg-surface-container-low overflow-hidden rounded-sm relative shadow-sm">
         <img
           src={image}
           alt={title}
@@ -23,17 +23,17 @@ export default function MenuItem({ image, title, price, description, labels }: M
       </div>
 
       {/* Content Container */}
-      <div className="flex-1 min-w-0">
+      <div className="flex-1 min-w-0 pt-0.5">
         <div className="flex justify-between items-baseline mb-1 gap-2">
-          <h3 className="font-headline text-lg md:text-xl text-on-surface truncate group-hover:text-primary transition-colors duration-300">
+          <h3 className="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors duration-300">
             {title}
           </h3>
-          <div className="flex-grow border-b border-dotted border-outline-variant/30 mx-2 hidden sm:block" />
-          <span className="text-primary font-label text-sm tracking-widest whitespace-nowrap">
+          <div className="grow border-b border-dotted border-outline-variant/30 mx-2 hidden sm:block" />
+          <span className="text-primary font-label text-xs md:text-sm tracking-widest whitespace-nowrap">
             {price}
           </span>
         </div>
-        <p className="text-outline font-body text-xs md:text-sm leading-relaxed opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+        <p className="text-outline font-body text-xs md:text-sm leading-relaxed opacity-85 group-hover:opacity-100 transition-opacity duration-300">
           {description}
         </p>
         {labels && labels.length > 0 && (

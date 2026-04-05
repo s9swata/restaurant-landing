@@ -2,8 +2,8 @@ import MenuItem from './MenuItem';
 
 export default function SecondiSection() {
   return (
-    <section className="mb-20 md:mb-40 px-4 md:px-8 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+    <section id="secondi" className="mb-12 md:mb-32 px-4 md:px-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-start">
         <div className="md:col-span-5 md:sticky top-40">
           <h2 className="font-headline text-4xl mb-6">Secondi</h2>
           <div className="w-24 h-px bg-primary-container mb-12"></div>
@@ -28,31 +28,24 @@ export default function SecondiSection() {
             />
           </div>
         </div>
-        <div className="md:col-span-7">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="col-span-2 relative aspect-[16/9] overflow-hidden">
-              <img
-                alt="Secondi main course"
-                className="w-full h-full object-cover"
-                data-alt="Beautifully seared lamb rack served with roasted vegetables and a glossy red wine reduction on dark slate"
-                src="/images/secondi-1.webp"
-              />
-            </div>
-            <div className="aspect-[3/4] overflow-hidden">
-              <img
-                alt="Detail of ingredients"
-                className="w-full h-full object-cover"
-                data-alt="Fresh purple artichokes and garden herbs on a marble surface with soft natural light"
+        <div className="md:col-span-7 flex flex-col gap-12 pt-8 md:pt-0">
+          <div className="relative overflow-hidden aspect-video md:aspect-4/5 bg-surface-container-highest shadow-lg">
+            <img
+              alt="Secondi main course"
+              className="w-full h-full object-cover grayscale-[0.1] hover:scale-105 transition-transform duration-700"
+              src="/images/secondi-1.webp"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-8">
+            <div className="aspect-square bg-surface-container-low overflow-hidden">
+               <img
+                alt="Detail course"
+                className="w-full h-full object-cover opacity-80"
                 src="/images/secondi-2.webp"
               />
             </div>
-            <div className="aspect-[3/4] overflow-hidden mt-12">
-              <img
-                alt="Wine pairing"
-                className="w-full h-full object-cover"
-                data-alt="A glass of deep red Barolo wine standing next to a bottle in a dim, sophisticated cellar atmosphere"
-                src="/images/secondi-3.webp"
-              />
+            <div className="flex flex-col justify-center p-4 border-l border-outline-variant/20 italic font-headline text-primary">
+               "The essence of land and sea, balanced by fire."
             </div>
           </div>
         </div>
